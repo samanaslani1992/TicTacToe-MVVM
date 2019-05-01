@@ -13,6 +13,9 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name=".view.GameActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".view.GameActivitySaman"
             android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

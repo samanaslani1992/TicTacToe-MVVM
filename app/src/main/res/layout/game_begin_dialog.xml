@@ -14,7 +14,7 @@
             android:id="@+id/et_player1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/player1_hint"
+
             android:inputType="textPersonName"
             android:maxLines="1"
             android:singleLine="true" />
@@ -31,7 +31,7 @@
             android:id="@+id/et_player2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/player2_hint"
+
             android:inputType="textPersonName"
             android:maxLines="1"
             android:singleLine="true" />

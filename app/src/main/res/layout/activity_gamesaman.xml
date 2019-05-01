@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="gameViewModel2"
+            type="husaynhakeem.io.tictactoe_mvvm.viewmodel.GameViewModelSaman" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <TextView
+            android:id="@+id/cell_00"
+            style="@style/CellTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:onClick="@{() -> gameViewModel2.onClickedCellAt(0, 0)}"
+            android:text='@{gameViewModel2.cells["00"]}' />
+
+        <TextView
+            android:id="@+id/cell_01"
+            style="@style/CellTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cell_color"
+            android:onClick="@{() -> gameViewModel2.onClickedCellAt(0, 1)}"
+            android:text='@{gameViewModel2.cells["01"]}' />
+
+        <TextView
+            android:id="@+id/cell_02"
+            style="@style/CellTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:onClick="@{() -> gameViewModel2.onClickedCellAt(0, 2)}"
+            android:text='@{gameViewModel2.cells["02"]}' />
+
+
+    </LinearLayout>
+
+</layout>
